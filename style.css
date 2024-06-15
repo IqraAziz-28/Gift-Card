@@ -113,7 +113,7 @@ body {
 .play-button {
         display: block;
         position: absolute;
-        margin: -50px 460px;
+        margin: -3.5% 45%;
         padding: 10px 20px;
         font-size: 16px;
         background-color: #ff5e5e;

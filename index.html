@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Sahiba</title>
+    <link rel="icon" href="cake128.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="play-button" onclick="playMusic()">Play Music</button>
+    <audio id="background-music" src="happy-birthday-155461.mp3" loop></audio>
+    <div class="birthday-card">
+        
+        <!-- Inner -->
+        <div class="cover-inner">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5n439L9Qd0vjVe_SJd2TteNwCAIRTXqkJXUbw6jORxlq7S1XO7NLzPRUi-RSiA3suzW8&usqp=CAU" width="100%">
+        </div>
+    
+        <!-- Outer -->
+        <div class="cover-outer">
+            <img src="https://images.esellerpro.com/3274/I/318/37/lrgscaleAO002.jpg" width="100%">
+        </div>
+    
+        <!-- Text -->
+        <div class="text">
+            <p class="title">
+                Happy Birthday! <br> Sahiba
+            </p>
+            <p>
+                I hope your special day will bring you lots of happiness,
+                love, and fun.
+                You deserve all of them. Enjoy!
+            </p>
+            <p>
+            And Let's make more memories in this vacation,
+            I'm very Exicted!
+            </p>
+            <p>I always Love You No Matter What!</p>
+    <h5 class="iqra">Iqra
+    <i class="fa-regular fa-heart"></i></h5>
+        </div>
+
+</div>
+</body>
+</html>
+<script>
+      function playMusic() {
+            var music = document.getElementById('background-music');
+            music.play();
+            document.querySelector('.play-button').style.display = 'none';
+        }
+
+        window.addEventListener('beforeunload', function() {
+            var music = document.getElementById('background-music');
+            music.pause();
+        });
+</script>
